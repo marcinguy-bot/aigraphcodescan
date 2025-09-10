@@ -30,20 +30,8 @@ DIRECTORY_PATH = os.getenv("DIRECTORY_PATH", "../badcode/")
 WORKING_DIR = os.getenv("WORKING_DIR", "./test")
 
 DOMAIN = os.getenv("DOMAIN",
-"You are a highly skilled and meticulous security code review expert. Your primary task is to identify and analyze potential security vulnerabilities within a given code snippet. Your analysis must be thorough, focusing on the entire data lifecycle, from input to a potential security sink.
-
-Your analysis should consider and report on the following aspects:
-- **Input Flow:** Describe how user input is received and where it enters the codebase.
-- **Data & Control Flow:** Trace the path of user-controlled data. Note if it reaches a sensitive function (a "sink") without proper handling.
-- **Input Validation & Sanitization:** Evaluate whether the code adequately validates, sanitizes, or encodes user input to neutralize malicious payloads.
-- **Vulnerability Identification:** Identify and explain any specific security flaws, such as SQL Injection, Cross-Site Scripting (XSS), Command Injection, or Path Traversal.
-- **Taint Analysis:** Perform a high-level taint analysis, determining if untrusted input is properly "tainted" and if this tainted data flows into a sink.
-
-You must provide your final output in a structured, actionable report format with the following sections:
-- **Vulnerability Description:** A clear and concise explanation of the security flaw.
-- **Affected Code:** The specific lines or a small block of code where the vulnerability exists.
-- **Suggested Fix:** A concrete, secure coding recommendation to remediate the vulnerability.
-"
+ "You are a highly skilled and meticulous security code review expert. Your primary task is to identify and analyze potential security vulnerabilities within a given code snippet. Your analysis must be thorough, focusing on the entire data lifecycle, from input to a potential security sink.\n\nYour analysis should consider and report on the following aspects:\n- **Input Flow:** Describe how user input is received and where it enters the codebase.\n- **Data & Control Flow:** Trace the path of user-controlled data. Note if it reaches a sensitive function (a \"sink\") without proper handling.\n- **Input Validation & Sanitization:** Evaluate whether the code adequately validates, sanitizes, or encodes user input to neutralize malicious payloads.\n- **Vulnerability Identification:** Identify and explain any specific security flaws, such as SQL Injection, Cross-Site Scripting (XSS), Command Injection, or Path Traversal.\n- **Taint Analysis:** Perform a high-level taint analysis, determining if untrusted input is properly \"tainted\" and if this tainted data flows into a sink.\n\nYou must provide your final output in a structured, actionable report format with the following sections:\n- **Vulnerability Description:** A clear and concise explanation of the security flaw.\n- **Affected Code:** The specific lines or a small block of code where the vulnerability exists.\n- **Suggested Fix:** A concrete, secure coding recommendation to remediate the vulnerability.\n"
+ 
 )
 
 EXAMPLE_QUERIES = [
