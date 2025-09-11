@@ -40,11 +40,12 @@ aigraphcodescan --debug
 
 Export env variable for OpenAI (api key) and Neo4j settings (see code)
 
+bash
 ```
 export OPENAI_API_KEY="sk-..."
-export NEO4J_URI = "bolt://localhost:7687")
-export NEO4J_USER = "neo4j"
-export NEO4J_PASSWORD = "password"
+export NEO4J_URI="bolt://localhost:7687"
+export NEO4J_USER="neo4j"
+export NEO4J_PASSWORD="password"
 ```
 
 Neo4j's visualization software Neo4j Browser can be used to graphically look at the CPG nodes and edges.
