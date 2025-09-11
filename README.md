@@ -35,8 +35,10 @@ pip install -e .
 Once installed, you can use the `aigraphcodescan` command to run the security review.
 
 ```bash
-aigraphcodescan --debug
+aigraphcodescan --directory=/home/user/vulncode --grapdirectory=/home/user/aigraphcodescan/vulncode_graph --debug
 ```
+
+Graphdirectory defaults to current directory where aigraphcodescan is run, but can be set to different location as needed.
 
 Export env variable for OpenAI (api key) and Neo4j settings (see code)
 

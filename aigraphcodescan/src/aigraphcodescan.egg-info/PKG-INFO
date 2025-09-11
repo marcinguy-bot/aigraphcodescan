@@ -44,7 +44,6 @@ pip install -e .
 - Python 3.6+
 - `neo4j >= 4.0.0`
 - `fast_graphrag >= 0.1.0`
-- `argparse`, `logging`, `json`
 
 ## Usage
 
@@ -56,10 +55,21 @@ aigraphcodescan --debug
 
 Export env variable for OpenAI (api key) and Neo4j settings (see code)
 
+bash
 ```
-export NEO4J_URI = "bolt://localhost:7687")
-export NEO4J_USER = "neo4j"
-export NEO4J_PASSWORD = "password"
+export OPENAI_API_KEY="sk-..."
+export NEO4J_URI="bolt://localhost:7687"
+export NEO4J_USER="neo4j"
+export NEO4J_PASSWORD="password"
+```
+
+Neo4j's visualization software Neo4j Browser can be used to graphically look at the CPG nodes and edges.
+
+Please make sure, that the APOC plugin is enabled on your neo4j server. It is used in mass-creating nodes and relationships.
+
+For example using docker:
+```
+docker run -p 7474:7474 -p 7687:7687 -d -e NEO4J_AUTH=neo4j/password -e NEO4JLABS_PLUGINS='["apoc"]' neo4j:5
 ```
 
 The command will start the graph-based security review process. The `--debug` option enables more detailed logging output.
