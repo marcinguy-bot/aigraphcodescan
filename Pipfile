@@ -4,8 +4,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-neo4j = "*"
-fast_graphrag = "*"
+neo4j = ">=4.0.0"
+fast_graphrag = ">=0.1.0"
 
 [dev-packages]
 
