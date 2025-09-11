@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: aigraphcodescan
-Version: 1.1.6
+Version: 1.0.0
 Summary: A tool for security review of code using graph-based analysis
 Home-page: https://github.com/tcosolutions/aigraphcodescan
 Author: Marcin Kozlowski
@@ -11,6 +11,7 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Dynamic: license-file
 
 # AIGraphCodeScan
 
@@ -51,6 +52,14 @@ Once installed, you can use the `aigraphcodescan` command to run the security re
 
 ```bash
 aigraphcodescan --debug
+```
+
+Export env variable for OpenAI (api key) and Neo4j settings (see code)
+
+```
+export NEO4J_URI = "bolt://localhost:7687")
+export NEO4J_USER = "neo4j"
+export NEO4J_PASSWORD = "password"
 ```
 
 The command will start the graph-based security review process. The `--debug` option enables more detailed logging output.

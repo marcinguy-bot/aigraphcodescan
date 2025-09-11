@@ -10,3 +10,5 @@ aigraphcodescan/src/aigraphcodescan.egg-info/SOURCES.txt
 aigraphcodescan/src/aigraphcodescan.egg-info/dependency_links.txt
 aigraphcodescan/src/aigraphcodescan.egg-info/entry_points.txt
 aigraphcodescan/src/aigraphcodescan.egg-info/top_level.txt
+aigraphcodescan/src/aigraphcodescan/__pycache__/__main__.cpython-312.pyc
+aigraphcodescan/src/aigraphcodescan/__pycache__/app.cpython-312.pyc
